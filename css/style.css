@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+html{
+    box-sizing: border-box;
+    background-color: #EDF2C5;
+}
+
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+.body{
+    color: #778A50;;
+    font-family: 'Noto Sans';
+}
+
+.container{
+    max-width: 1120px ;/*超過940px的頁面會讓他維持在940*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.header{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.header-title{
+    color: #778A50;
+    margin: 0;
+    font-weight: 900;
+    font-size: 44px;
+}
+.icon-area{
+    display: flex;
+    justify-content: flex-end;
+}
+.icon-pp{
+    /* display: block; */
+    width: 24px;
+    height: 24px;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+.icon-tblock{
+    height: 27px;
+    width: 62px;
+    border-radius: 3px;
+    border: 1px solid;
+    padding: 5px;
+    margin-bottom: 18px;
+    margin-left: 10px;
+    text-align: center;
+    
+    color: #778A50;
+    font-size: 14px;
+    font-weight: 700;
+
+}
+.nav{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    width: 100%;
+    /* border: 3px solid; */
+    /* height: 44px; */
+    background-color: #778A50;
+    Border-radius:3px;
+    font-size: 16px;
+    font-weight: 900;
+}
+.nav-list{
+    /* margin-right: 5px; */
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.nav-link{/*下給a標籤用的，img.a這兩個標籤沒有高度->要轉成display:block*/
+    display: inline-block;
+    padding: 16px 30px;
+
+    text-decoration: none;
+    font-size: 16px;
+    color: #EDF2C5;
+}
+.nav-link:hover{
+    background-color: #F7FBDA;
+    color: #778A50;
+}
+/* 內容區域 */
+.content-area{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;/*讓article跟aside反轉*/
+}
+/* 首頁南瓜大圖 */
+.pumpkin{
+    width: 100%;
+    margin-bottom: 20px;
+}
+/* 右側文字 */
+.l-title-container,.r-title-container{
+    width: 100%;
+    height: 45px;
+    Border-radius:3px;
+    padding-left: 30px;
+    background-color: #778A50;
+
+    display: flex;
+    align-items: center;
+
+    color:#EDF2C5;
+    font-weight: 900;
+    font-size: 16px;
+}
+.article{
+    width: 528px;
+    max-height: 140px;
+    font-size: 12px;
+}
+.container-block{
+    /* border: 3px solid; */
+    color: #7D7D7D;
+    padding: 16px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    background-color: #778A50;
+    Border-radius:3px;
+    background-color: #F7FBDA;
+}
+.contact-p{
+    margin: 5px;
+}
+/* 左邊文字 */
+.aside{
+    width: 528px;
+    margin-right: 35px;
+}
+/* gallery */
+.gallery{
+    margin-top: 15px;
+    margin-bottom: 35px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows: repeat(2,200px); */
+    /* <-設定圖片長寬比 */
+    gap: 10px;
+    width: 100%;
+    /* height:140px; */
+}
+.gallery-img{
+    display: block;
+    width: 100%;
+    max-height: 140px;
+    /* height: 140px; */
+    object-fit: cover;
+    /* <將圖片進行裁切 */
+}
+
+.footer{
+    width: 100%;
+    height: 60px;
+    background-color: #778A50;
+    margin-top: 117px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #EDF2C5;
+}
+
+/* .main-area{
+
+}
+
+.sidebar{
+
+} */
